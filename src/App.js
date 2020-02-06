@@ -8,11 +8,11 @@ import Logout from './components/Auth/Logout/Logout';
 import * as actions from './store/actions/index';
 
 const Checkout = React.lazy(() => {
-	return import('./containers/Checkout/Checkout');
+	return import('./components/Checkout/Checkout');
 });
 
 const Orders = React.lazy(() => {
-	return import('./containers/Orders/Orders');
+	return import('./components/Orders/Orders');
 });
 
 const Auth = React.lazy(() => {

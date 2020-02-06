@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import Order from '../../components/Order/Order';
+import Order from '../Order/Order';
 import axios from '../../axios-orders';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
-import * as actions from '../../store/actions/index';
-import Spinner from '../../components/UI/Spinner/Spinner';
+import * as actions from '../../store/actions';
+import Spinner from '../UI/Spinner/Spinner';
 
 const orders = props => {
 	const { onFetchOrders } = props;
